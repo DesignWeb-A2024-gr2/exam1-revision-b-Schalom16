@@ -1,0 +1,136 @@
+
+@font-face{
+    font-family: "gilroy-extrabold-webfont";
+    src: url('../assets/font/gilroy-extrabold-webfont.woff2') format('woff2');    
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --plq_color:#f08080;
+    --PQ_color:	#004C9D;
+    --QS_color:	#FF8040;
+    --PCQ_color:#1db9e0;
+    --CAQ_color:#1e90ff;
+    --CQ_color:	#13876c;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display:flex;
+    width: 700px;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "gilroy-extrabold-webfont", sans-serif;
+}
+header h1{
+    font-size: 4em;
+}
+header h2{
+    font-size: 2.5em;
+}
+#liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.candidat1{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    display: flex;
+    transition: all 400ms;
+}
+.icone-checked{
+    display: none;
+}
+main{
+    width: 75%;
+}
+.nom{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 2em;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+aside{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#c0:hover{
+    background-color: var(--plq_color);
+    transform: translateX(20px);  
+}
+.candidat1:hover .icone-vide{
+    display: none;
+}
+.candidat1:hover .icone-checked{
+    display: block;
+}
+#c1:hover{
+    background-color: var(--PQ_color);
+    transform: translateX(20px);
+    animation-duration: 400;
+}
+
+#c2:hover{
+    background-color: var(--QS_color);
+    transform: translateX(20px);
+    animation-duration: 400;
+}
+#c3:hover{
+    background-color: var(--PCQ_color);
+    transform: translateX(20px);
+    animation-duration: 400ms;
+}
+
+#c4:hover{
+    background-color: var(--CAQ_color);
+    transform: translateX(20px);
+    animation-duration: 400;
+}
+
+#c5:hover{
+    background-color: var(--CQ_color);
+    transform: translateX(20px);
+    animation-duration: 400;
+}
+button{
+    
+    background-color: antiquewhite;
+    width: fit-content;
+    font-size: 25px;
+    cursor: pointer
+}
+#bouton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+footer  img{
+    height: 24px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
